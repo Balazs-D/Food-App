@@ -27,13 +27,21 @@ const CategoriesScreen = (props) => {
     <FlatList data={CATEGORIES} renderItem={renderGridItem} numColumns={2} />
   );
 };
-CategoriesScreen.navigationOptions = {
-  headerTitle: "Meal Categories",
-  headerLeft: () => (
-    <HeaderButtons HeaderButtonComponent={HeaderButton}>
-      <Item title="Menu" iconName="ios-menu" onPress={() => {}} />
-    </HeaderButtons>
-  ),
+CategoriesScreen.navigationOptions = (navData) => {
+  return {
+    headerTitle: "Meal Categories",
+    headerLeft: () => (
+      <HeaderButtons HeaderButtonComponent={HeaderButton}>
+        <Item
+          title="Menu"
+          iconName="ios-menu"
+          onPress={() => {
+            navData.navigation.toggleDrawer();
+          }}
+        />
+      </HeaderButtons>
+    ),
+  };
 };
 
 const styles = StyleSheet.create({
