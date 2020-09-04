@@ -11,6 +11,13 @@ import FavoritesScreen from "../screens/FavouritesScreen";
 import { Ionicons } from "@expo/vector-icons";
 import { createMaterialBottomTabNavigator } from "react-navigation-material-bottom-tabs";
 
+const defaultStackNavOption = {
+  headerStyle: {
+    backgroundColor: Platform.OS === "android" ? Colors.accentColor : "white",
+  },
+  headerTintColor: Colors.primaryColor,
+};
+
 const MealsNavigator = createStackNavigator(
   {
     Categories: CategoriesScreen,
@@ -20,15 +27,15 @@ const MealsNavigator = createStackNavigator(
     },
     MealDetail: MealDetailsScreen,
   },
+  { defaultNavigationOptions: defaultStackNavOption }
+);
+
+const FavNavigator = createStackNavigator(
   {
-    defaultNavigationOptions: {
-      headerStyle: {
-        backgroundColor:
-          Platform.OS === "android" ? Colors.accentColor : "white",
-      },
-      headerTintColor: Colors.primaryColor,
-    },
-  }
+    Favorites: FavoritesScreen,
+    MealDetail: MealDetailsScreen,
+  },
+  { defaultNavigationOptions: defaultStackNavOption }
 );
 const tabScreenConfig = {
   Meals: {
@@ -43,7 +50,7 @@ const tabScreenConfig = {
     },
   },
   Favorites: {
-    screen: FavoritesScreen,
+    screen: FavNavigator,
     navigationOptions: {
       tabBarIcon: (tabInfo) => {
         return <Ionicons name="ios-star" size={25} color={tabInfo.tintColor} />;
