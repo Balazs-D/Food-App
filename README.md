@@ -38,7 +38,7 @@ npm install
 npm start
 ```
 
-5. Navigate to app in [browser](http://localhost:3000)
+5. App opens in Simulator
 
 ## Used Technologies
 
