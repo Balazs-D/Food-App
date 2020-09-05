@@ -1,7 +1,10 @@
 # Food App
 
 <p float="left">
-<img src="assets/readmeImages/02.png" width=10% height=40% /> <img src="assets/readmeImages/04.png" width=10% height=40% /> <img src="assets/readmeImages/03.png" width=10% height=40% /> <img src="assets/readmeImages/01.png" width=10% height=40% />
+<img src="assets/readmeImages/02.png" width40% height=40% /> 
+<img src="assets/readmeImages/04.png" width40% height=40% /> 
+<img src="assets/readmeImages/03.png" width40% height=40% /> 
+<img src="assets/readmeImages/01.png" width40% height=40% />
 </p>
 
 By [Balazs Danyadi](mailto:balazs.danyadi@gmail.com)
