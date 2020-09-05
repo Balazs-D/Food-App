@@ -1,9 +1,9 @@
 # Food App
 
-<img src="assets/readmeImages/02.png" width=20% height=40% />
-<img src="assets/readmeImages/04.png" width=20% height=40% />
-<img src="assets/readmeImages/03.png" width=20% height=40% />
-<img src="assets/readmeImages/01.png" width=20% height=40% />
+<img src="assets/readmeImages/02.png" width=10% height=40% />
+<img src="assets/readmeImages/04.png" width=10% height=40% />
+<img src="assets/readmeImages/03.png" width=10% height=40% />
+<img src="assets/readmeImages/01.png" width=10% height=40% />
 
 By [Balazs Danyadi](mailto:balazs.danyadi@gmail.com)
 
