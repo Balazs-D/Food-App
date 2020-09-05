@@ -4,7 +4,6 @@
 <img src="assets/readmeImages/02.png" width=15% height=40% /> 
 <img src="assets/readmeImages/04.png" width=15% height=40% /> 
 <img src="assets/readmeImages/05.png" width=15% height=40% />
-
 <img src="assets/readmeImages/03.png" width=15% height=40% /> 
 <img src="assets/readmeImages/01.png" width=15% height=40% />
 </p>
@@ -46,11 +45,11 @@ npm start
 - React Native
 - Redux
 
-## Requirements
+## Features
 
 - Browse recipes by categories
 - Add / remove recipes to / from favorites
 - Browse favorites recipes
-- Use filters
-
-## Preview
+- Filter recipes
+- Drawer, Stock and Tab Navigation
+- State management, saving settings
